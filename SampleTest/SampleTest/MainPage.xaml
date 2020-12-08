@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SampleTest.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:ffTransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+    xmlns:touch="clr-namespace:TouchEffect;assembly=TouchEffect">
+
+    <ff:CachedImage
+        Margin="0"
+        touch:TouchEff.NativeAnimation="True"
+        touch:TouchEff.NativeAnimationColor="LightGray"
+        HeightRequest="138"
+        HorizontalOptions="Center"
+        Source="http://lorempixel.com/400/200/people/1/"
+        WidthRequest="138">
+        <ff:CachedImage.Transformations>
+            <ffTransformations:CircleTransformation />
+        </ff:CachedImage.Transformations>
+    </ff:CachedImage>
+
+</ContentPage>
